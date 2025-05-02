@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Vendors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">Pharmacy Management System</div>
+            <div class="flex space-x-4">
+                <a href="admin_dashboard.html" class="hover:text-gray-300">Dashboard</a>
+                <a href="manage_vendors.html" class="hover:text-gray-300">Manage Vendors</a>
+                <a href="manage_inventory.html" class="hover:text-gray-300">Manage Inventory</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Title Section -->
+    <section class="text-center py-8 bg-white shadow-md">
+        <h1 class="text-4xl font-bold text-black">Manage Vendors</h1>
+        <p class="text-lg text-gray-600 mt-2">View, Edit, and Remove vendors for your pharmacy</p>
+    </section>
+
+    <!-- Vendor List Section -->
+    <section class="container mx-auto p-6 mt-8">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-3xl font-semibold text-gray-800">Vendor List</h2>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+                Add New Vendor
+            </button>
+        </div>
+
+        <!-- Vendor Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Vendor Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Vendor Name 1</h3>
+                    <div class="text-gray-500">ID: 001</div>
+                </div>
+                <p class="text-gray-600 mb-4">Location: New York, USA</p>
+                <div class="flex justify-between">
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600">
+                        Edit
+                    </button>
+                    <button class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">
+                        Remove
+                    </button>
+                </div>
+            </div>
+
+            <!-- Vendor Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Vendor Name 2</h3>
+                    <div class="text-gray-500">ID: 002</div>
+                </div>
+                <p class="text-gray-600 mb-4">Location: Los Angeles, USA</p>
+                <div class="flex justify-between">
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600">
+                        Edit
+                    </button>
+                    <button class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">
+                        Remove
+                    </button>
+                </div>
+            </div>
+
+            <!-- Vendor Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Vendor Name 3</h3>
+                    <div class="text-gray-500">ID: 003</div>
+                </div>
+                <p class="text-gray-600 mb-4">Location: Chicago, USA</p>
+                <div class="flex justify-between">
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600">
+                        Edit
+                    </button>
+                    <button class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">
+                        Remove
+                    </button>
+                </div>
+            </div>
+
+            <!-- Vendor Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Vendor Name 4</h3>
+                    <div class="text-gray-500">ID: 004</div>
+                </div>
+                <p class="text-gray-600 mb-4">Location: Houston, USA</p>
+                <div class="flex justify-between">
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600">
+                        Edit
+                    </button>
+                    <button class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">
+                        Remove
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

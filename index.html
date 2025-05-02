@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pharmacy Management System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gray-100 text-gray-900"></body>
+
+  <!-- Navbar -->
+  <nav class="bg-black text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold">Pharmacy Management System</div>
+      <div class="flex-1 flex justify-center space-x-6">
+        <a href="#home" class="hover:text-gray-300">Home</a>
+        <a href="#special-features" class="hover:text-gray-300">Special Features</a>
+        <a href="#login" class="hover:text-gray-300">Login</a>
+        <a href="#about-us" class="hover:text-gray-300">About Us</a>
+        <a href="#contact-us" class="hover:text-gray-300">Contact Us</a>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#login" class="bg-black border border-white hover:bg-gray-800 text-white px-4 py-2 rounded-md">Admin Login</a>
+        <a href="#login" class="bg-black border border-white hover:bg-gray-800 text-white px-4 py-2 rounded-md">Staff Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title Section -->
+  <section class="text-center py-8" id="home">
+    <h1 class="text-5xl font-bold text-black">Welcome to Pharmacy Management System</h1>
+    <p class="text-lg text-gray-600 mt-2">Efficient, Reliable, and Secure Pharmacy Management</p>
+  </section>
+
+  <!-- Image Slider -->
+  <div class="slider-container relative mx-auto shadow-lg rounded-lg overflow-hidden w-4/5">
+    <div class="slider">
+      <img src="picture/a.jpeg" class="slide active w-full" alt="Pharmacy Image 1">
+      <img src="picture/b.jpeg" class="slide w-full" alt="Pharmacy Image 2">
+      <img src="picture/c.jpeg" class="slide w-full" alt="Pharmacy Image 3">
+    </div>
+  </div>
+
+  <!-- Special Features -->
+  <section id="special-features" class="py-20 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-black mb-8">Special Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="feature-box p-6 bg-white rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Inventory Management</h3>
+          <p>Keep track of medicines and stock levels efficiently.</p>
+        </div>
+        <div class="feature-box p-6 bg-white rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Automated Billing</h3>
+          <p>Generate invoices and track payments with ease.</p>
+        </div>
+        <div class="feature-box p-6 bg-white rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Customer Records</h3>
+          <p>Maintain patient and prescription records securely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="py-16 bg-gray-50 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-black mb-8">Login</h2>
+      <div class="flex justify-center space-x-6">
+        <a href="admin/login_admin.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md">Admin Login</a>
+        <a href="staff/login_staff.html" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-md">Staff Login</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about-us" class="py-16 bg-white text-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-black mb-6">About Us</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        We provide an efficient and reliable pharmacy management system to ensure seamless operations for healthcare providers.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact-us" class="bg-black text-white text-center py-10">
+    <h2 class="text-2xl font-bold mb-4">Follow Us</h2>
+    <div class="flex justify-center space-x-6">
+      <a href="https://www.instagram.com" class="hover:text-gray-300 text-3xl"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com" class="hover:text-gray-300 text-3xl"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.facebook.com" class="hover:text-gray-300 text-3xl"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Staff Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex bg-gray-100 min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gradient-to-b from-teal-700 to-teal-900 text-white min-h-screen p-6">
+        <h1 class="text-2xl font-bold mb-10">Staff Panel</h1>
+        <nav class="space-y-4">
+            <a href="#" class="block px-4 py-2 rounded bg-white text-teal-900 font-semibold">Staff Dashboard</a>
+            <a href="#" class="block px-4 py-2 rounded hover:bg-teal-800">Manage Inventory</a>
+            <a href="#" class="block px-4 py-2 rounded hover:bg-teal-800">Product Details</a>
+            <a href="#" class="block px-4 py-2 rounded hover:bg-teal-800">Sales Details</a>
+            <a href="#" class="block px-4 py-2 rounded hover:bg-teal-800">Customer Details</a>
+            <a href="#" class="block px-4 py-2 rounded hover:bg-teal-800">Prepare Bill</a>
+            <!-- Logout Link -->
+            <a href="logout.php" class="block px-4 py-2 rounded bg-red-600 text-white hover:bg-red-800 mt-4">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8">
+        <header class="mb-6">
+            <h2 class="text-3xl font-bold text-gray-800">Welcome to the Staff Dashboard</h2>
+        </header>
+
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg border-l-4 border-teal-600">
+                <h3 class="text-xl font-semibold mb-2">Manage Inventory</h3>
+                <p class="text-gray-600">Add or update medicine stock efficiently.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg border-l-4 border-teal-600">
+                <h3 class="text-xl font-semibold mb-2">Product Details</h3>
+                <p class="text-gray-600">View and edit medicine information.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg border-l-4 border-teal-600">
+                <h3 class="text-xl font-semibold mb-2">Sales Details</h3>
+                <p class="text-gray-600">Track daily and monthly sales reports.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg border-l-4 border-teal-600">
+                <h3 class="text-xl font-semibold mb-2">Customer Details</h3>
+                <p class="text-gray-600">Manage customer profiles and prescriptions.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg border-l-4 border-teal-600">
+                <h3 class="text-xl font-semibold mb-2">Prepare Bill</h3>
+                <p class="text-gray-600">Generate and print customer bills quickly.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
